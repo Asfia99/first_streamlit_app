@@ -25,7 +25,7 @@ streamlit.dataframe(fruits_to_show)
 
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/all")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/kiwi")
 
 streamlit.header("Fruityvice Fruit Advice!")
 #streamlit.text(fruityvice_response.json())
@@ -54,3 +54,7 @@ my_data_row = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
+
+##add another text box entry
+add_my_fruit = streamlit.text_input('What fruit would you like information about?','Jackfruit')
+streamlit.write('The user entered ', add_my_fruit)
