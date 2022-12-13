@@ -45,8 +45,7 @@ streamlit.dataframe(fruityvice_normalized)
 #import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
-
-/home/appuser/venv/bin/python -m pip install --upgrade pip
+pip install --upgrade pip
 
 
 import snowflake.connector
