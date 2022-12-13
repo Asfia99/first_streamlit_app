@@ -41,5 +41,5 @@ streamlit.write('The user entered ', fruit_choice)
 streamlit.dataframe(fruityvice_normalized)
 
 
-import requests
+#import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
