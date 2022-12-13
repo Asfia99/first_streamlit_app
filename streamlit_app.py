@@ -52,8 +52,7 @@ except URLError as e:
 ##streamlit.stop()
 
 
-streamlit.header("The fruit load list contains:")
-streamlit.dataframe(my_data_row)
+#streamlit.header("The fruit load list contains:")
 streamlit.header("The fruit load list contains:")
 
 ##snowflake related functions
