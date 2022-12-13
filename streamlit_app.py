@@ -45,6 +45,10 @@ streamlit.dataframe(fruityvice_normalized)
 #import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
+
+/home/appuser/venv/bin/python -m pip install --upgrade pip
+
+
 import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
@@ -53,4 +57,5 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
--m pip install --upgrade pip
+
+
