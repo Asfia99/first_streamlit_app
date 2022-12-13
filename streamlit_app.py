@@ -42,4 +42,4 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+fruityvice_response = requests.get(f"https://fruityvice.com/api/fruit/{fruit_choice}")
